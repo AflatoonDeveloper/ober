@@ -1,0 +1,144 @@
+.fa-compact-disc {
+  color: rgb(255, 75, 75);
+  font-size: 2rem;
+}
+
+.nav-link{
+  color: rgb(50, 50, 50) !important
+}
+.nav-link:hover{
+  color: rgb(240, 5, 5) !important
+}
+
+.navCss{
+  height: 5rem;
+  background-color: white;
+}
+
+.footor{
+  background-color: rgb(250, 250, 250);
+height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+.form1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  
+}
+.input1{
+  margin: 15px;
+  padding: 10px 15px;
+  width: 300px;
+}
+
+.listing-card{
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+
+
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important ;
+}
+
+.card-body{
+  padding: 0 !important;
+}
+
+.text-lisitng{
+  text-decoration: none;
+}
+
+.card-img-overlay{
+  opacity: 0 !important;
+}
+
+.card-img-overlay:hover{
+  opacity: 0.2 !important;
+  background-color: rgb(255, 255, 255);
+}
+
+.listing-card{
+  height: 20rem;
+  width: 100%;
+  
+}
+
+.color{
+  background-color: white;
+}
+
+#map {
+  height: 300px;
+  width: 1100px;
+}
+
+.filters{
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.filter{
+  text-align: center;
+  padding: 0  !important;
+  margin-right: 1.5rem !important;
+  margin-top: 2rem;
+  opacity: 0.7;
+}
+
+.filter:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.tex-class{
+  display: none;
+}
+
+.btn-search{
+  background-color: rgb(240, 5, 5) !important;
+  color: white !important;
+  border-radius: 25px !important;
+  padding: 0 1rem 0 1rem !important;
+}
+
+.btn-search i {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.search-input{
+  border-radius: 25px !important;
+  padding: 0.5rem 3rem 0.5rem 3rem !important;
+
+}
+
+@media (max-width: 991.98px) { /* Max-width for lg screens */
+  .filters {
+      visibility: hidden;
+      margin: 0;
+      padding: 0;
+      display: none;
+      /* display: none; */
+  }
+  .filter{
+    visibility: hidden;
+      margin: 0;
+      padding: 0;
+      display: none;
+
+  }
+  .maindiv{
+    margin: -2rem;
+  }
+}

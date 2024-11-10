@@ -1,0 +1,45 @@
+<% layout("/layout/boilerplate")%>
+<body>
+  <h1>Edite List</h1>
+  
+
+
+  <form class="row g-3 mb-5 needs-validation" method="post" action="/listing/<%=data._id%>?_method=PUT" novalidate enctype="multipart/form-data">
+    <div class="col-md-6">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" name="title" value=<%= data.title%> class="form-control" required>
+    </div>
+    <div class="col-md-6">
+      <label for="description" class="form-label">Price</label>
+      <input type="text" name="price" value=<%= data.price%> class="form-control" required>
+    </div>
+    <div class="col-12">
+      <p>Previews Image</p>
+      <a href="<%=data.image.url %>" target="_blank">
+      <img src="<%=originalImage%>"/></a>
+    </div>
+    
+    <div class="col-12">
+      <label for="image" class="form-label">Upload New Image</label>
+      <input type="file" name="image"  class="form-control" />
+    </div>
+    <div class="col-md-6">
+      <label for="location" class="form-label">Location</label>
+      <input type="text" name="location" class="form-control" value=<%= data.location%> required >
+    </div>
+  <div class="col-md-6">
+      <label for="country" class="form-label">Country</label>
+      <input type="text" name="country" class="form-control" value="<%= data.country%>" required />
+    </div>
+  
+    <div class="col-12">
+      <label for="description" class="form-label">Description</label>
+      <textarea rows="8" cols="40" name="description" class="form-control" id="floatingTextarea2" style="height: 100px" required><%= data.description%></textarea>
+    </div>
+    
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary"> Done </button>
+    </div>
+  </form>
+  
+</body>

@@ -1,0 +1,81 @@
+<% layout("/layout/boilerplate")%>
+<style>
+ 
+</style>
+<body>
+  <div class="filters ">
+    <div class="filter">
+  <div><i class="fa-solid fa-fire"></i></div>
+  <p>Trading</p>
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-bed"></i></div>
+      <p>Room</p>
+        </div>
+        <div class="filter">
+          <div><i class="fa-solid fa-city"></i></div>
+          <p>Iconic Cities</p>
+            </div>
+            <div class="filter">
+              <div><i class="fa-solid fa-mountain-city"></i></div>
+              <p>Mountain</p>
+                </div>
+                <div class="filter">
+                  <div><i class="fa-brands fa-fort-awesome"></i></div>
+                  <p>Castles</p>
+                    </div>
+                    <div class="filter md-2">
+                      <div><i class="fa-solid fa-person-swimming"></i></div>
+                      <p>Amazing Pools</p>
+                        </div>
+                        <div class="filter">
+                          <div><i class="fa-solid fa-campground"></i></div>
+                          <p>Comping</p>
+                            </div>
+                            <div class="filter">
+                              <div><i class="fa-solid fa-cow"></i></div>
+                              <p>Farms</p>
+                                </div>
+                                
+  </div>
+  <div>
+    <div class="form-check-reverse form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Display Total After Taxes</label>
+    </div>
+  </div>
+ <!-- <form action="/listing/api/new"><button>Add more</button></form> -->
+  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3 maindiv">
+  <%for(list of data){ %>
+    <a href="/listing/<%=list._id %>" class="text-lisitng" >
+    <div class="card col listing-card" >
+      <img src="<%=list.image.url %>" class="card-img-top" alt="..." style="height:18rem;" > 
+      <div class="card-img-overlay"></div>
+      <div class="card-body">
+        <h5 class="card-title"><%=list.title %></h5>
+        <p class="card-text"><%= list.price%>$/night  <i class="tex-class"> &nbsp; &nbsp; +18 GTP</i></p>
+      
+      </div>
+    </div>
+  </a>
+ <% } %>
+</div>
+
+
+</body>
+
+<script>
+  let texSheft = document.getElementById("flexSwitchCheckDefault");
+  texSheft.addEventListener("click",()=>{
+   let getTex = document.getElementsByClassName("tex-class");
+   for(tax of getTex){
+    if(tax.style.display != "inline"){
+      tax.style.display="inline";
+    }else{
+      tax.style.display="none";
+
+    }
+   
+   }
+  })
+</script>

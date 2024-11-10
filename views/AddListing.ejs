@@ -1,0 +1,66 @@
+<% layout("/layout/boilerplate")%>
+<body>
+  <h1>Add New List</h1>
+  <!-- <form class="form1" method="post" action="/listing/api/new">
+    <input class="input1" name="title" placeholder="Enter your title"/>
+    <textarea rows="8" cols="40" name="description" placeholder="Enter your description"></textarea>
+    <input class="input1" name="image" placeholder="Enter your image url"/>
+    <input class="input1" name="price" placeholder="Price"/>
+    <input class="input1" name="location" placeholder="Enter your Location"/>
+    <input class="input1" name="country" placeholder="Enter your country name"/>
+    <button>Add now</button>
+  </form> -->
+<!-- add boos -->
+<form class="row g-3 mb-5 needs-validation" method="post" action="/listing/api/new" novalidate enctype="multipart/form-data">
+  <div class="col-md-6">
+    <label for="title" class="form-label">Title</label>
+    <input type="text" name="title" placeholder="Enter your title" class="form-control" required>
+    <div class="valid-feedback">
+      Title Looks good!
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="description" class="form-label">Price</label>
+    <input type="text" name="price" placeholder="3000$" class="form-control" required>
+    <div class="invalid-feedback">
+      Price should be valid
+    </div>
+  </div>
+  
+  <div class="col-12">
+    <label for="image" class="form-label">Upload Image</label>
+    <input type="file" name="image" class="form-control" required>
+    <div class="invalid-feedback">
+      image url should be valid
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="location" class="form-label">Location</label>
+    <input type="text" name="location" class="form-control" id="inputCity" required>
+    <div class="invalid-feedback">
+      location should be valid
+    </div>
+  </div>
+<div class="col-md-6">
+    <label for="country" class="form-label">Country</label>
+    <input type="text" name="country" class="form-control" id="inputCity" required>
+    <div class="invalid-feedback">
+      Country name should be valid
+    </div>
+  </div>
+
+  <div class="col-12">
+    <label for="description" class="form-label">Description</label>
+    <textarea rows="8" cols="40" name="description" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+    <div class="invalid-feedback">
+      Description should be valid
+    </div>
+  </div>
+  
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Add List</button>
+  </div>
+</form>
+
+
+</body>
