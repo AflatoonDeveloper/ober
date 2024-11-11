@@ -123,3 +123,5 @@ dist
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Node,env
 # Local Netlify folder
 .netlify
+
+.vercel
