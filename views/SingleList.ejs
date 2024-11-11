@@ -88,11 +88,8 @@
 </div>
  
 <script>
-	// TO MAKE THE MAP APPEAR YOU MUST
-	// ADD YOUR ACCESS TOKEN FROM
-	// https://account.mapbox.com
+
   let tokenAccess = "<%= process.env.MAP_TOKEN %>"
-  // console.log(tokenAccess)
 	mapboxgl.accessToken = tokenAccess;
     const map = new mapboxgl.Map({
         container: 'map', // container ID
