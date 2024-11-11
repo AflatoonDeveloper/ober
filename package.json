@@ -1,7 +1,4 @@
 {
-  "engines": {
-    "node": "v20.11.1"
-  },
   "name": "projem1",
   "version": "1.0.0",
   "main": "app.js",
