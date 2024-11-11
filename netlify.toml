@@ -1,8 +1,7 @@
 [build]
-  functions = "functions"  # path to your serverless functions folder
-  publish = "public"       # path for any static files (e.g., if you have a frontend)
-
+ functions = "netlify/functions"
 [[redirects]]
+  force = true
   from = "/api/*"
-  to = "/.netlify/functions/server/:splat"
   status = 200
+  to = "/.netlify/functions/api/:splat"
