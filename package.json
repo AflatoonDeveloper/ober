@@ -4,13 +4,12 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "build": "netlify-lambda build functions"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": " ",
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.16.1",
     "@netlify/functions": "^2.8.2",
